@@ -1,0 +1,57 @@
+.animacao-mover-norte {
+    animation: para-norte  1s;
+}
+
+.animacao-mover-sul{
+    animation: para-sul 1s;
+}
+
+.animacao-mover-leste{
+    animation: para-leste 1s;
+}
+
+.animacao-mover-oeste {
+    animation: para-oeste 1s;
+}
+
+
+
+@keyframes para-norte {
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-23%);
+    }
+    
+}
+
+@keyframes para-sul {
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(23%);
+    }
+    
+}
+
+@keyframes para-oeste {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30%);
+    }
+    
+}
+
+@keyframes para-leste {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-30%);
+    }
+    
+}

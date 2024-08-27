@@ -1,0 +1,44 @@
+
+.botoes-jogo{
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--branco);
+    background-color: var(--verde);
+    border-radius: 10px;
+}
+
+.botoes-jogo:active{
+    background-color: var(--vermelho);
+}
+
+#norte{
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+}
+
+#centro{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: var(--branco);
+}
+
+#sul{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
+
+#leste{
+    position: absolute;
+    bottom: 10%;
+    left: 1.1%;
+}
+
+#oeste{
+    position: absolute;
+    bottom: 10%;
+    left: 8.9%;
+    
+}
