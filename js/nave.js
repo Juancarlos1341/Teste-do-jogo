@@ -6,10 +6,6 @@ botaoLeste = document.getElementById("leste")
 
 posicaoNaveComprimento = 60
 posicaoNaveLargura = 40
-intervaloNorte = null
-intervaloSul = null
-intervaloLeste = null
-intervaloOeste = null
 const screenWidth = window.screen.width
 const screenHeight = window.screen.height
 
@@ -61,49 +57,89 @@ function moverNaveParaLeste(){
     }
 }
 
-botaoNorte.addEventListener('mouseover', () => {
-    botaoNorte.style = "background-color: var(--vermelho);"
-    intervaloNorte = setInterval(moverNaveParaNorte, 50)
-})
-botaoNorte.addEventListener('mouseout',() => {
-    botaoNorte.style = "background-color: var(--verde);"
-    clearInterval(intervaloNorte)
-})
-
-
-botaoSul.addEventListener("mouseover", () =>{
-    botaoSul.style = "background-color: var(--vermelho);"
-    intervaloSul = setInterval(moverNaveParaSul, 50)
+if (screenWidth > 1000){
+    intervaloNorte = null
+    intervaloSul = null
+    intervaloLeste = null
+    intervaloOeste = null
     
-})
-botaoSul.addEventListener('mouseout',() => {
-    botaoSul.style = "background-color: var(--verde);"
-    clearInterval(intervaloSul)
-})
-
-botaoOeste.addEventListener("mouseover", ()=>{
-    botaoOeste.style = "background-color: var(--vermelho);"
-    intervaloOeste = setInterval(moverNaveParaOeste,50)
+    botaoNorte.addEventListener('mouseover', () => {
+        botaoNorte.style = "background-color: var(--vermelho);"
+        intervaloNorte = setInterval(moverNaveParaNorte, 50)
+    })
+    botaoNorte.addEventListener('mouseout',() => {
+        botaoNorte.style = "background-color: var(--verde);"
+        clearInterval(intervaloNorte)
+    })
     
-})
-botaoOeste.addEventListener('mouseout',() => {
-    botaoOeste.style = "background-color: var(--verde);"
-    clearInterval(intervaloOeste)
-})
-
-botaoLeste.addEventListener("mouseover", () => {
-    botaoLeste.style = "background-color: var(--vermelho);"
-    intervaloLeste = setInterval(moverNaveParaLeste, 50)
     
-})
-botaoLeste.addEventListener('mouseout',() => {
-    botaoLeste.style = "background-color: var(--verde);"
-    clearInterval(intervaloLeste)
-})
-botaoNorte.addEventListener("touchend", () =>{
-    botaoNorte.style = "background-color: var(--vermelho);"
-    moverNaveParaNorte()
-})
+    botaoSul.addEventListener("mouseover", () =>{
+        botaoSul.style = "background-color: var(--vermelho);"
+        intervaloSul = setInterval(moverNaveParaSul, 50)
+        
+    })
+    botaoSul.addEventListener('mouseout',() => {
+        botaoSul.style = "background-color: var(--verde);"
+        clearInterval(intervaloSul)
+    })
+    
+    botaoOeste.addEventListener("mouseover", ()=>{
+        botaoOeste.style = "background-color: var(--vermelho);"
+        intervaloOeste = setInterval(moverNaveParaOeste,50)
+        
+    })
+    botaoOeste.addEventListener('mouseout',() => {
+        botaoOeste.style = "background-color: var(--verde);"
+        clearInterval(intervaloOeste)
+    })
+    
+    botaoLeste.addEventListener("mouseover", () => {
+        botaoLeste.style = "background-color: var(--vermelho);"
+        intervaloLeste = setInterval(moverNaveParaLeste, 50)
+        
+    })
+    botaoLeste.addEventListener('mouseout',() => {
+        botaoLeste.style = "background-color: var(--verde);"
+        clearInterval(intervaloLeste)
+    })
+
+}
+if (screenWidth < 1000) {
+    botaoNorte.addEventListener("click", () =>{
+        botaoNorte.style = "background-color: var(--vermelho);"
+        botaoSul.style = "background-color: var(--verde);"
+        botaoOeste.style = "background-color: var(--verde);"
+        botaoLeste.style = "background-color: var(--verde);"
+        moverNaveParaNorte()
+    })
+
+    botaoSul.addEventListener("click", () =>{
+        botaoLeste.style = "background-color: var(--verde);"
+        botaoOeste.style = "background-color: var(--verde);"
+        botaoNorte.style = "background-color: var(--verde);"
+        botaoSul.style = "background-color: var(--vermelho);"
+        moverNaveParaSul()
+    })
+    
+    botaoOeste.addEventListener("click", ()=>{
+        botaoLeste.style = "background-color: var(--verde);"
+        botaoSul.style = "background-color: var(--verde);"
+        botaoNorte.style = "background-color: var(--verde);"
+        botaoOeste.style = "background-color: var(--vermelho);"
+        moverNaveParaOeste()
+        
+    })
+    
+    botaoLeste.addEventListener("click", () => {
+        botaoOeste.style = "background-color: var(--verde);"
+        botaoSul.style = "background-color: var(--verde);"
+        botaoNorte.style = "background-color: var(--verde);"
+        botaoLeste.style = "background-color: var(--vermelho);"
+        moverNaveParaLeste()
+        
+    })
+
+}
 
 window.addEventListener('keydown', (evento) =>{
     tecla = evento.keyCode
