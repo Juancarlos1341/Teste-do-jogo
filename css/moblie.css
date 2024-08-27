@@ -31,38 +31,39 @@
 
     #centro{
         position: absolute;
-        bottom: 15%;
+        bottom: 13%;
         left: 8%;
+        border: 2px solid var(--preto);
     }
 
     #norte{
         position: absolute;
-        bottom: 28%;
+        bottom: 26%;
         left: 8%;
     }
     
     #sul{
         position: absolute;
-        bottom: 1.8%;
+        bottom: 0;
         left: 8%;
     }
     
     #leste{
         position: absolute;
-        bottom: 15%;
-        left:2%;
+        bottom: 13%;
+        left:0;
     }
     
     #oeste{
         position: absolute;
-        bottom: 15%;
-        left: 14.1%;
+        bottom: 13%;
+        left: 16%;
         
     }
 
     .botoes-jogo{
-        width: 4em;
-        height: 4em;
+        width: 8vw;
+        height: 13vh;
         border: 2px solid var(--branco);
         background-color: var(--verde);
         border-radius: 10px;
@@ -80,12 +81,20 @@
 
     #canhao{
         position: absolute;
+        top: 20%;
+        left: 1%;
     }
     #escudo{
         position: absolute;
+        top: 30%;
+        left: 1%;
+        width: 10%;
     }
     #melhoria{
         position: absolute;
+        top: 20%;
+        left: 1%;
+        border: 2px solid var(--preto);
     }
 
 }
