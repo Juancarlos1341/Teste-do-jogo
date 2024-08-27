@@ -18,7 +18,7 @@ function moverNaveParaNorte(){
         posicaoNaveComprimento -= 5
         nave.style.top = posicaoNaveComprimento + "%"
     }
-    if (screenHeight < 415 && posicaoNaveComprimento > -20){
+    if (screenHeight < 415 && posicaoNaveComprimento > -15){
         posicaoNaveComprimento -= 5
         nave.style.top = posicaoNaveComprimento + "%"
         console.log(nave.style.top)
@@ -30,7 +30,7 @@ function moverNaveParaSul(){
         posicaoNaveComprimento += 5
         nave.style.top = posicaoNaveComprimento + "%"
     }
-    if (screenHeight < 415 && posicaoNaveComprimento < 60){
+    if (screenHeight < 415 && posicaoNaveComprimento < 75){
         posicaoNaveComprimento += 5
         nave.style.top = posicaoNaveComprimento + "%"
         console.log(nave.style.top)
@@ -42,7 +42,7 @@ function moverNaveParaOeste(){
         posicaoNaveLargura += 5
         nave.style.left = posicaoNaveLargura + "%"
     } 
-    if(screenWidth < 1000 && posicaoNaveLargura < 105) {
+    if(screenWidth < 1000 && posicaoNaveLargura < 110) {
         posicaoNaveLargura += 5
         nave.style.left = posicaoNaveLargura + "%"
         console.log(nave.style.left)
@@ -54,7 +54,7 @@ function moverNaveParaLeste(){
         posicaoNaveLargura -= 5
         nave.style.left = posicaoNaveLargura + "%"
     }
-    if(screenWidth < 1000 && posicaoNaveLargura > -30){
+    if(screenWidth < 1000 && posicaoNaveLargura > 5){
         posicaoNaveLargura -= 5
         nave.style.left = posicaoNaveLargura + "%"
         console.log(nave.style.left)
