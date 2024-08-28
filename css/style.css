@@ -34,7 +34,7 @@ h1 {
     margin: .8;
 }
 
-#paniel-nave {
+.paniel-nave {
     height: 15vh;
     max-height: 75px;
     background: var(--branco-tranparente);
@@ -43,6 +43,10 @@ h1 {
     border: 3px solid var(--branco);
     box-shadow: 5px 10px var(--preto);
     color: var(--preto);
+}
+
+#paniel-nave-moblie{
+    display: none;
 }
 
 .icone{
