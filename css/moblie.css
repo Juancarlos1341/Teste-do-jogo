@@ -8,6 +8,14 @@
         margin-top: 0;
     }
 
+    #paniel-nave-moblie{
+        display: block;
+    }
+
+    #paniel-pc{
+        display: none;
+    }
+
     #palco{
         border: none;
     }
@@ -36,7 +44,6 @@
         bottom: 30%;
         left: 8%;
     }
-    }
     
     #sul{
         position: absolute;
@@ -58,8 +65,7 @@
     }
 
     .botoes-jogo{
-        width: 8vw;
-        height: 13vh;
+        width: 8%;
         border: 2px solid var(--branco);
         background-color: var(--verde);
         border-radius: 10px;
@@ -73,6 +79,18 @@
         margin: .5em;
         width: 15vw;
         text-align: center;
+    }
+
+    #canhao{
+        position: absolute;
+        top: 20%;
+        left: 1%;
+    }
+    #escudo{
+        position: absolute;
+        top: 30%;
+        left: 1%;
+        width: 10%;
     }
     #nave-update{
         position: absolute;
