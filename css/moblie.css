@@ -26,32 +26,33 @@
 
     #centro{
         position: absolute;
-        bottom: -22%;
+        bottom: 12%;
         left: 8%;
         border: 2px solid var(--preto);
     }
 
     #norte{
         position: absolute;
-        bottom: -9%;
+        bottom: 30%;
         left: 8%;
+    }
     }
     
     #sul{
         position: absolute;
-        bottom: -35%;
+        bottom: -7%;
         left: 8%;
     }
     
     #leste{
         position: absolute;
-        bottom: -22%;
+        bottom: 12%;
         left:0;
     }
     
     #oeste{
         position: absolute;
-        bottom: -22%;
+        bottom: 12%;
         left: 16%;
         
     }
@@ -73,19 +74,7 @@
         width: 15vw;
         text-align: center;
     }
-
-    #canhao{
-        position: absolute;
-        top: 20%;
-        left: 1%;
-    }
-    #escudo{
-        position: absolute;
-        top: 30%;
-        left: 1%;
-        width: 10%;
-    }
-    #melhoria{
+    #nave-update{
         position: absolute;
         top: 20%;
         left: 1%;
