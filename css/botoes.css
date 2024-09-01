@@ -49,3 +49,43 @@
     position: absolute;
     border: 2px solid var(--verde);
 }
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    #norte{
+        position: absolute;
+        bottom:0;
+        left: 0%;
+    }
+    
+    #centro{
+        display: none;
+    }
+    
+    #sul{
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+    }
+    
+    #leste{
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+    }
+    
+    #oeste{
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        
+    }
+    
+    #nave-update{
+        top: 20%;
+        left: 1%;
+        position: absolute;
+        border: 2px solid var(--verde);
+    }
+
+}
+
