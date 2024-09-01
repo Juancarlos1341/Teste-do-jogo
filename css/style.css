@@ -30,13 +30,12 @@ body {
 p,
 h1 {
     font-family: 'Fonte-jogo';
-    font-size: 2em;
+    font-size: 2vw;
     margin: .8;
 }
 
 .paniel-nave {
-    height: 15vh;
-    max-height: 75px;
+    height: 70px;
     background: var(--branco-tranparente);
     display: flex;
     justify-content: space-between;
@@ -45,13 +44,9 @@ h1 {
     color: var(--preto);
 }
 
-#paniel-nave-moblie{
-    display: none;
-}
-
 .icone{
     margin: .5em;
-    width: 12vw;
+    width: 13vw;
     text-align: center;
 }
 
@@ -65,11 +60,11 @@ main {
     background-color: var(--cinza);
     background-position: center;
     background-size: cover;
-    margin: 0 auto;
-    height: 78vh; 
-    width: 62vw;
+    margin: 3em auto;
+    height: 70vh; 
+    width: 70vw;
     border: 6px solid var(--branco);
-    margin-top: 1.5em;
+
 }
 
 .esconder{
@@ -148,6 +143,7 @@ main {
 }
 
 #chuva, #solar{
-    margin: 1em;
+    margin: .5em;
     border: 2px solid var(--preto);
+    height: 60%;
 }
