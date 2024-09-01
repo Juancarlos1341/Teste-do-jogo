@@ -1,102 +1,24 @@
 @media screen and (min-width:300px) and (max-width:1000px) {
-    main {
-        width: 100%;
-        height: 100vh;
-        background-color: var(--cinza);
-        background-position: center;
-        background-size: cover;
-        margin-top: 0;
+    .paniel-nave {
+        height: 55px;
+        background: var(--branco-tranparente);
+        display: flex;
+        justify-content: space-between;
+        border: 3px solid var(--branco);
+        box-shadow: 5px 10px var(--preto);
+        color: var(--preto);
     }
-
-    #paniel-nave-moblie{
-        display: block;
-    }
-
-    #paniel-pc{
-        display: none;
-    }
-
-    #palco{
-        border: none;
-    }
-
-    #nave{
-        position: relative;
-        top: 60%;
-        left: 40%;
-        width: 20%;
-    }
-
-    h1,
-    p {
-        font-size: 1em;
-    }
-
-    #centro{
-        position: absolute;
-        bottom: 12%;
-        left: 8%;
-        border: 2px solid var(--preto);
-    }
-
-    #norte{
-        position: absolute;
-        bottom: 30%;
-        left: 8%;
-    }
-    
-    #sul{
-        position: absolute;
-        bottom: -7%;
-        left: 8%;
-    }
-    
-    #leste{
-        position: absolute;
-        bottom: 12%;
-        left:0;
-    }
-    
-    #oeste{
-        position: absolute;
-        bottom: 12%;
-        left: 16%;
-        
-    }
-
-    .botoes-jogo{
-        width: 8%;
-        border: 2px solid var(--branco);
-        background-color: var(--verde);
-        border-radius: 10px;
-    }
-    #chuva, #solar{
-        border: 2px solid var(--preto);
-        height: 55%;
-    }
-
     .icone{
         margin: .5em;
-        width: 15vw;
+        width: 18vw;
         text-align: center;
     }
 
-    #canhao{
-        position: absolute;
-        top: 20%;
-        left: 1%;
+    p,
+    h1 {
+        font-family: 'Fonte-jogo';
+        font-size: 18px;
+        margin: .8;
     }
-    #escudo{
-        position: absolute;
-        top: 30%;
-        left: 1%;
-        width: 10%;
-    }
-    #nave-update{
-        position: absolute;
-        top: 20%;
-        left: 1%;
-        border: 2px solid var(--preto);
-    }
-
+    
 }
