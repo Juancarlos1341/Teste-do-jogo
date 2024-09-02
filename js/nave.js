@@ -39,7 +39,7 @@ function moverNaveParaOeste(){
         nave.style.left = posicaoNaveLargura + "%"
     } 
     if(screenWidth < 1000 && posicaoNaveLargura < 110) {
-        posicaoNaveLargura += 5
+        posicaoNaveLargura += 20
         nave.style.left = posicaoNaveLargura + "%"
         console.log(nave.style.left)
     }
@@ -51,7 +51,7 @@ function moverNaveParaLeste(){
         nave.style.left = posicaoNaveLargura + "%"
     }
     if(screenWidth < 1000 && posicaoNaveLargura > 5){
-        posicaoNaveLargura -= 5
+        posicaoNaveLargura -= 20
         nave.style.left = posicaoNaveLargura + "%"
         console.log(nave.style.left)
     }
@@ -105,21 +105,6 @@ if (screenWidth > 1000){
 
 }
 if (screenWidth < 1000) {
-    botaoNorte.addEventListener("click", () =>{
-        botaoNorte.style = "background-color: var(--vermelho);"
-        botaoSul.style = "background-color: var(--verde);"
-        botaoOeste.style = "background-color: var(--verde);"
-        botaoLeste.style = "background-color: var(--verde);"
-        moverNaveParaNorte()
-    })
-
-    botaoSul.addEventListener("click", () =>{
-        botaoLeste.style = "background-color: var(--verde);"
-        botaoOeste.style = "background-color: var(--verde);"
-        botaoNorte.style = "background-color: var(--verde);"
-        botaoSul.style = "background-color: var(--vermelho);"
-        moverNaveParaSul()
-    })
     
     botaoOeste.addEventListener("click", ()=>{
         botaoLeste.style = "background-color: var(--verde);"
