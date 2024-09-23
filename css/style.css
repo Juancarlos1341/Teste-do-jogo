@@ -61,8 +61,8 @@ main {
     background-position: center;
     background-size: cover;
     margin: 3em auto;
-    height: 70vh; 
-    width: 70vw;
+    width: 800px;
+    height: 500px;
     border: 6px solid var(--branco);
 
 }
@@ -118,7 +118,7 @@ main {
     position: relative;
     top: 60%;
     left: 40%;
-    width: 10vw;
+    width: 8vw;
 }
 
 
